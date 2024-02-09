@@ -3,7 +3,7 @@
 #include <iostream>					// In/Out Streams
 #include <cstdlib>					// Abbrüche durch falsche Eingaben verhindern
 #include <iomanip>					// E-Notation deaktivieren
-
+//#include <vector>					// Arrays einfügen
 
 // Variablen
 
@@ -73,23 +73,25 @@ void taschenrechner() {
 }
 
 
-void faq() {
+void anleitung() {
 	std::cout << "*******************************************************************\n";
 	std::cout << "*                                                                 *\n";
 	std::cout << "*                           Anleitung:                            *\n";
 	std::cout << "*                                                                 *\n";
-	std::cout << "* - Ein normaler Rechenterm wird so ausgefuehrt:                  *\n";
-	std::cout << "*                                                                 *\n";
-	std::cout << "*                            40 Enter                             *\n";
-	std::cout << "*                             + Enter                             *\n";
-	std::cout << "*                             2 Enter                             *\n";
-	std::cout << "*                             = Enter                             *\n";
-	std::cout << "*                                                                 *\n";
-	std::cout << "* - Der Rechner verwendet fuer Komma einen Punkt!                 *\n";
-	std::cout << "* - Variable als long double deklariert, deswegen keine Werte mit *\n";
-	std::cout << "*   mehr als 19 Stellen verwenden!                                *\n";
-	std::cout << "* - Du willst beispielsweise ausrechnen wie viel 40% von 170      *\n";
-	std::cout << "*   sind, dann tippe in den Rechner: 170*40%.                     *\n";
+	std::cout << "* 1. Ein normaler Rechenterm wird so ausgefuehrt:                 *\n";
+	std::cout << "*    40  Enter                                                    *\n";
+	std::cout << "*    +   Enter                                                    *\n";
+	std::cout << "*    -2  Enter                                                    *\n";
+	std::cout << "*    =   Enter                                                    *\n";
+	std::cout << "* 2. Der Rechner verwendet fuer Komma einen Punkt!                *\n";
+	std::cout << "* 3. Es können Minus-Zahlen in Termen genutzt werden.             *\n";
+	std::cout << "* 4. Variable als long double deklariert, deswegen keine Werte    *\n";
+	std::cout << "*    mit mehr als 19 Stellen verwenden!                           *\n";
+	std::cout << "* 5. Berechnung des Wertes von 40% von 170 wird so ausgefuehrt:   *\n";
+	std::cout << "*    170 Enter                                                    *\n";
+	std::cout << "*    *   Enter                                                    *\n";
+	std::cout << "*    40  Enter                                                    *\n";
+	std::cout << "*    %   Enter                                                    *\n";
 	std::cout << "*                                                                 *\n";
 	std::cout << "*******************************************************************\n";
 }
@@ -98,42 +100,46 @@ void faq() {
 // Hauptprogramm
 
 int main() {
-		// Deaktivierung der E-Notation bzw der Scientific Notation
-		std::cout << std::setiosflags(std::ios_base::fixed) << std::setprecision(0);
-	
-		std::cout << "*******************************************************************\n";
-		std::cout << "*                                                                 *\n";
-		std::cout << "*                      Taschenrechner V1.00                       *\n";
-		std::cout << "*                           by Oliver                             *\n";
-		std::cout << "*                                                                 *\n";
-		std::cout << "*******************************************************************\n";
+	// Deaktivierung der E-Notation bzw der Scientific Notation
+	std::cout << std::setiosflags(std::ios_base::fixed) << std::setprecision(0);
 
-		// Programm wird neu gestartet
-		while (true) {
+	std::cout << "*******************************************************************\n";
+	std::cout << "*                                                                 *\n";
+	std::cout << "*                      Taschenrechner V1.00                       *\n";
+	std::cout << "*                           by Oliver                             *\n";
+	std::cout << "*                                                                 *\n";
+	std::cout << "*******************************************************************\n";
 
-			std::cout << "\n";
-			std::cout << "(1) Taschenrechner starten\n";
-			std::cout << "(2) F.A.Q.\n";
-			std::cout << "(3) Programm beenden\n";
-			std::cout << "\n";
-			std::cin >> menue;
+	// Programm wird neu gestartet
+	while (true) {
 
-			switch (menue) {
-				case 1:
-					// Programm starten
-					taschenrechner ();
-					break;
-				case 2:
-					// FAQ
-					faq ();
-					break;
-				case 3:
-					// Programm beenden
-					return 0;
-				default:
-					std::cout << "Falsche Eingabe." << std::endl;
-			}
-
-
+		std::cout << "\n";
+		std::cout << "(1) Taschenrechner starten\n";
+		std::cout << "(2) Anleitung lesen\n";
+		std::cout << "(3) Programm beenden\n";
+		std::cout << "\n";
+		std::cin >> menue;
+		if (std::cin.fail()) {
+			std::cerr << "Fehler bei der Eingabe\n";
+			return EXIT_FAILURE;
 		}
+
+		switch (menue) {
+		case 1:
+			// Programm starten
+			taschenrechner();
+			break;
+		case 2:
+			// Anleitung lesen
+			anleitung();
+			break;
+		case 3:
+			// Programm beenden
+			return 0;
+		default:
+			std::cout << "Falsche Eingabe" << std::endl;
+		}
+
+
+	}
 }
