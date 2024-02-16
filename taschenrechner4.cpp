@@ -1,9 +1,10 @@
 // Bibliotheken
 
-#include <iostream>					// In/Out Streams
-#include <cstdlib>					// Abbrüche durch falsche Eingaben verhindern
+#include <iostream>					// In/out Streams
+#include <cstdlib>					// Kontrollierte Programmenden
 #include <iomanip>					// E-Notation deaktivieren
-//#include <vector>					// Arrays einfügen
+#include <stdlib.h>					// Konsole leeren
+
 
 // Variablen
 
@@ -16,7 +17,10 @@ int menue;
 // Funktionen
 
 void taschenrechner() {
-	std::cout << "\n";
+
+	// Konsole leeren
+	system("cls");
+
 	std::cout << "Rechenterm eingeben:\n";
 	std::cout << "\n";
 
@@ -74,6 +78,10 @@ void taschenrechner() {
 
 
 void anleitung() {
+
+	// Konsole leeren
+	system("cls");
+
 	std::cout << "*******************************************************************\n";
 	std::cout << "*                                                                 *\n";
 	std::cout << "*                           Anleitung:                            *\n";
@@ -84,7 +92,7 @@ void anleitung() {
 	std::cout << "*    -2  Enter                                                    *\n";
 	std::cout << "*    =   Enter                                                    *\n";
 	std::cout << "* 2. Der Rechner verwendet fuer Komma einen Punkt!                *\n";
-	std::cout << "* 3. Es können Minus-Zahlen in Termen genutzt werden.             *\n";
+	std::cout << "* 3. Es koennen Minus-Zahlen in Termen genutzt werden.            *\n";
 	std::cout << "* 4. Variable als long double deklariert, deswegen keine Werte    *\n";
 	std::cout << "*    mit mehr als 19 Stellen verwenden!                           *\n";
 	std::cout << "* 5. Berechnung des Wertes von 40% von 170 wird so ausgefuehrt:   *\n";
@@ -100,8 +108,11 @@ void anleitung() {
 // Hauptprogramm
 
 int main() {
+
 	// Deaktivierung der E-Notation bzw der Scientific Notation
 	std::cout << std::setiosflags(std::ios_base::fixed) << std::setprecision(0);
+
+	system("cls");	// Konsole leeren
 
 	std::cout << "*******************************************************************\n";
 	std::cout << "*                                                                 *\n";
