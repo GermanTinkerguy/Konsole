@@ -1,7 +1,9 @@
 # taschenrechner4
 Taschenrechner 4
 
-Funktionen
+Information:
+
+Funktionen:
 
 - Bis zu 19 Stellen korrekte Berechnungen mit 'long double'.
 - Erkennung aller verschiedenen Schreibweisen der Grundrechenarten.
@@ -10,3 +12,10 @@ Funktionen
   Multiplikation    (*) (x) (X)
   Division          (/) (:)
 - Erkennung von Termen mit Prozentrechnung
+
+
+To Do's:
+- 
+
+Bekannte Bugs:
+- 
