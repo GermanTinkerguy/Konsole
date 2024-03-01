@@ -10,3 +10,4 @@ Funktionen:
 
 
 To Do's:
+- If-Anweisung in For- oder While-Schleifen ändern
