@@ -5,3 +5,4 @@ BMI Rechner (Männer)
 - Berechnung von Kommazahlen
 - Ausgabe der Individuellen Wertetabelle nach Ergebnis
 - Löschen der Konsoleausgabe vor neuer Berechnungseingabe
+- Komplett auf Englisch geschriebener Code. Nur Ausgabe af Deutsch.
