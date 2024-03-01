@@ -29,6 +29,7 @@ Funktionen:
 
 To Do's:
 - Shunt Yard Algorithmus inkludieren für einfachere Rechentermeingabe.
+- Programm in Englisch halten.
 
 Bekannte Bugs:
 - Keine.
