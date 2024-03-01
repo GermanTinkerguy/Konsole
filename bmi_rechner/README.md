@@ -1,5 +1,9 @@
 BMI Rechner (Männer)
 
+Information:
+Ein BMI Rechner für Männer.
+
+
 Funktionen:
 - Erkennung von Falscheingaben wie Negativzahlen, Null oder Buchstaben.
 - Kontrolliertes Beenden nac Falscheingabe.
@@ -12,3 +16,7 @@ Funktionen:
 
 To Do's:
 - If-Anweisungen bei der Ergebnisauswahl optimieren.
+
+
+Bekannte Bugs:
+-Keine
