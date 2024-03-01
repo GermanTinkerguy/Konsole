@@ -11,18 +11,19 @@
 #include <conio.h>			// used for _getch() command
 #include <windows.h>		// used for buffer clear
 #include <stdlib.h>			// clear console command
+#include <iomanip>			// deactivate e-notation
 
 
-/***************************************************
- *  Name:        wait
- *
- *  Returns:     Nothing.
- *
- *  Parameters:  None.
- *
- *  Description: Clear screen and wait for input.
- *
- ***************************************************/
+ /***************************************************
+  *  Name:        wait
+  *
+  *  Returns:     Nothing.
+  *
+  *  Parameters:  None.
+  *
+  *  Description: Clear screen and wait for input.
+  *
+  ***************************************************/
 void wait() {
 
 	// clear buffer/screen
@@ -73,6 +74,9 @@ int main() {
 
 		// calculation
 		bmi = weight / (height * height);
+
+		// deactivate e-notation or also called scientific notation
+		std::cout << std::setiosflags(std::ios_base::fixed) << std::setprecision(0);
 
 		// output result
 		std::cout << "\n";
