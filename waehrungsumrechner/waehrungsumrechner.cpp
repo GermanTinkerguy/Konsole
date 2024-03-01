@@ -1,4 +1,10 @@
-// libraries
+/*
+ *
+ *  Currency Converter
+ *  Oliver - 2024
+ *
+ */
+
 
 #include <iostream>			// in/out streams
 #include <cstdlib>			// controlled closing
@@ -8,9 +14,17 @@
 #include <iomanip>			// E-Notation deaktivieren
 
 
-// function
-
-void warten() {
+ /***************************************************
+  *  Name:        wait
+  *
+  *  Returns:     Nothing.
+  *
+  *  Parameters:  None.
+  *
+  *  Description: Wait for input.
+  *
+  ***************************************************/
+void wait() {
 
 	// clear buffer
 	FlushConsoleInputBuffer(GetStdHandle(STD_INPUT_HANDLE));
@@ -20,8 +34,16 @@ void warten() {
 }
 
 
-// main program
-
+/***************************************************
+ *  Name:        main
+ *
+ *  Returns:     Nothing.
+ *
+ *  Parameters:  None.
+ *
+ *  Description: Main program.
+ *
+ ***************************************************/
 int main() {
 
 	// deactivate e-notation or scientific notation
@@ -31,8 +53,8 @@ int main() {
 	while (1) {
 
 		// variables
-		long double betrag = 0.0, ergebnis = 0.0;
-		int waehrung = 0;
+		long double value = 0.0, result = 0.0;
+		int currency = 0;
 
 		// currency converter values
 		long double eurinrsd = 117.16;
@@ -44,10 +66,10 @@ int main() {
 		std::cout << "Achtung: Punkt statt Komma!\n";
 		std::cout << "\n";
 		std::cout << "Bitte Geldbetrag eingeben: ";
-		std::cin >> betrag;
+		std::cin >> value;
 
 		// if wrong input, console closes
-		if (betrag <= 0) {
+		if (value <= 0) {
 			system("cls");	// clear console
 			std::cerr << "Fehler bei der Eingabe - Negativwert oder Null\n";
 			return EXIT_FAILURE;	// close program
@@ -67,48 +89,43 @@ int main() {
 		std::cout << "(4) USD -> EUR      0.93\n";
 		std::cout << "\n";
 		std::cout << "Umrechner: ";
-		std::cin >> waehrung;
+		std::cin >> currency;
 
 		// if wrong input, console closes
-		if (betrag <= 0) {
+		if (std::cin.fail() || value <= 0) {
 			system("cls");	// clear console
-			std::cerr << "Fehler bei der Eingabe - Negativwert oder Null\n";
-			return EXIT_FAILURE;	// close program
-		}
-		if (std::cin.fail()) {
-			system("cls");	// clear console
-			std::cerr << "Fehler bei der Eingabe - Buchstabe\n";
+			std::cerr << "Fehler bei der Eingabe\n";
 			return EXIT_FAILURE;	// close program
 		}
 
 		// calculation and display
-		switch (waehrung) {
+		switch (currency) {
 		case 1:
-			ergebnis = betrag * eurinrsd;
+			result = value * eurinrsd;
 			std::cout << "\n";
-			std::cout << betrag << " EUR sind umgerechnet " << ergebnis << " RSD\n";
+			std::cout << value << " EUR sind umgerechnet " << result << " RSD\n";
 			break;
 		case 2:
-			ergebnis = betrag * rsdineur;
+			result = value * rsdineur;
 			std::cout << "\n";
-			std::cout << betrag << " RSD sind umgerechnet " << ergebnis << " EUR\n";
+			std::cout << value << " RSD sind umgerechnet " << result << " EUR\n";
 			break;
 		case 3:
-			ergebnis = betrag * eurinusd;
+			result = value * eurinusd;
 			std::cout << "\n";
-			std::cout << betrag << " USD sind umgerechnet " << ergebnis << " USD\n";
+			std::cout << value << " USD sind umgerechnet " << result << " USD\n";
 			break;
 		case 4:
-			ergebnis = betrag * usdineur;
+			result = value * usdineur;
 			std::cout << "\n";
-			std::cout << betrag << " USD sind umgerechnet " << ergebnis << " EUR\n";
+			std::cout << value << " USD sind umgerechnet " << result << " EUR\n";
 			break;
 		}
 
 		std::cout << "\n";
 		std::cout << "\n";
 		std::cout << "Weiter mit Enter";
-		warten();
+		wait();
 
 		// clear console
 		system("cls");
