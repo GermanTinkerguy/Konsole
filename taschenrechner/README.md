@@ -2,6 +2,19 @@
 Taschenrechner 4
 
 Information:
+- Der Rechner verwendet fuer Komma einen Punkt!
+- Es koennen Minus-Zahlen in Termen genutzt werden.
+- Variable als long double deklariert, deswegen keine Werte mit mehr als 19 Stellen verwenden!
+- Ein normaler Rechenterm wird so ausgefuehrt:
+  40  Enter
+  +   Enter
+  -2  Enter
+  =   Enter
+- Berechnung des Wertes von 40% von 170 wird so ausgefuehrt:
+  170 Enter
+  *   Enter
+  40  Enter
+  %   Enter
 
 Funktionen:
 - Erkennung von Falscheingaben
