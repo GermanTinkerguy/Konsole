@@ -1,8 +1,7 @@
 BMI Rechner (Männer)
 
 Information:
-
-Ein BMI Rechner für Männer.
+- Ein BMI Rechner für Männer.
 
 
 Funktionen:
