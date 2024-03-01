@@ -21,12 +21,12 @@
   *
   *  Parameters:  None.
   *
-  *  Description: Clear screen and wait for input.
+  *  Description: Wait for input.
   *
   ***************************************************/
 void wait() {
 
-	// clear buffer/screen
+	// clear buffer
 	FlushConsoleInputBuffer(GetStdHandle(STD_INPUT_HANDLE));
 
 	//  read next button click
