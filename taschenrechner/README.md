@@ -4,7 +4,7 @@ Taschenrechner 4
 Information:
 
 Funktionen:
-
+- Erkennung von Falscheingaben
 - Bis zu 19 Stellen korrekte Berechnungen mit 'long double'.
 - Erkennung aller verschiedenen Schreibweisen der Grundrechenarten.
   Addition          (+)
