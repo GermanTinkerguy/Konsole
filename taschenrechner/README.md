@@ -17,18 +17,18 @@ Information:
   %   Enter
 
 Funktionen:
-- Erkennung von Falscheingaben
+- Erkennung von Falscheingaben z.B. Buchstaben im Rechenterm oder Zahlen bei der Menüauswahl.
 - Bis zu 19 Stellen korrekte Berechnungen mit 'long double'.
 - Erkennung aller verschiedenen Schreibweisen der Grundrechenarten.
   Addition          (+)
   Subtraktion       (-)
   Multiplikation    (*) (x) (X)
   Division          (/) (:)
-- Erkennung von Termen mit Prozentrechnung
+- Erkennung von Termen mit Prozentrechnung.
 
 
 To Do's:
-- 
+- Shunt Yard Algorithmus inkludieren für einfachere Rechentermeingabe.
 
 Bekannte Bugs:
-- 
+- Keine.
