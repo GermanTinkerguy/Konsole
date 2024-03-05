@@ -80,7 +80,7 @@ int main() {
 		// input data
 		std::cout << "Achtung:\nPunkt statt Komma!\n";
 		std::cout << "\n";
-		std::cout << "Gr\224sse in m:  ";
+		std::cout << "Gr\224\341e in m: ";
 		std::cin >> height;
 		std::cout << "Gewicht in kg: ";
 		std::cin >> weight;
