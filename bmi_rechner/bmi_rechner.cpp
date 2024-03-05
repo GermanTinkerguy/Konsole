@@ -78,21 +78,16 @@ int main() {
 		showHeader("BMI Rechner (Maenner)");
 
 		// input data
-		std::cout << "\n";
 		std::cout << "Achtung: Punkt statt Komma!\n";
-		std::cout << "Geben sie Ihre Groesse in m ein: ";
+		std::cout << "\n";
+		std::cout << "Groesse in m:  ";
 		std::cin >> height;
-		std::cout << "Geben sie Ihr Gewicht in kg ein: ";
+		std::cout << "Gewicht in kg: ";
 		std::cin >> weight;
 
-		// error message, if input fails - letters instead of numbers
-		if (std::cin.fail()) {
-			std::cerr << "Fehler bei Eingabe - Buchstabe\n";
-			return EXIT_FAILURE;
-		}
-		// error message, if input fails - signed numbers or zero
-		if (height <= 0 || weight <= 0) {
-			std::cerr << "Fehler bei Eingabe - Falscher Zahlenwert\n";
+		// error message, if input fails - letters instead of numbers or signed numbers or zero
+		if (std::cin.fail() || height <= 0 || weight <= 0) {
+			std::cerr << "Fehler bei Eingabe\n";
 			return EXIT_FAILURE;
 		}
 
