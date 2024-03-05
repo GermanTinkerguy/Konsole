@@ -111,7 +111,7 @@ int main() {
 			std::cout << "18.5 - 25      Normalgewicht\n";
 		}
 		if (25 <= bmi && bmi <= 30) {
-			std::cout << "  25 - 30      \201bergewicht\n";
+			std::cout << "  25 - 30      \232bergewicht\n";
 		}
 		if (30 <= bmi && bmi <= 35) {
 			std::cout << "  30 - 35      Adipositas Grad I\n";
