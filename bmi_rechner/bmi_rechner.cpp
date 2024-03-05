@@ -15,6 +15,28 @@
 
 
  /***************************************************
+  *  Name:        showHeader
+  *
+  *  Returns:     Nothing.
+  *
+  *  Parameters:  None.
+  *
+  *  Description: Wait for input.
+  *
+  ***************************************************/
+void showHeader(const std::string& text) {
+	for (int i = 0; i < text.size(); i++) {
+		std::cout << "#";
+	}
+	std::cout << "\n" << text << "\n";
+	for (int i = 0; i < text.size(); i++) {
+		std::cout << "#";
+	}
+	std::cout << "\n";
+}
+
+
+ /***************************************************
   *  Name:        wait
   *
   *  Returns:     Nothing.
@@ -52,8 +74,10 @@ int main() {
 		// variables
 		double height = 0.0, weight = 0.0, bmi = 0.0;
 
+		// show header
+		showHeader("BMI Rechner (Maenner)");
+
 		// input data
-		std::cout << "BMI Rechner (Maenner)\n";
 		std::cout << "\n";
 		std::cout << "Achtung: Punkt statt Komma!\n";
 		std::cout << "Geben sie Ihre Groesse in m ein: ";
