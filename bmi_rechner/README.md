@@ -2,6 +2,7 @@ BMI Calculator (men)
 
 BMI Rechner (Männer)
 
+***
 
 Information
 - A BMI Calculator for men.
@@ -9,6 +10,7 @@ Information
 Information:
 - Ein BMI Rechner für Männer.
 
+***
 
 Functions:
 - The Frame of the title is fitting itself automatically to its lenght.
@@ -32,12 +34,15 @@ Funktionen:
 - Deaktivierung der E-Notation.
 - Umlaute.
 
+***
+
 To Do's:
 - Optimate If-Arguments.
   
 To Do's:
 - If-Anweisungen bei der Ergebnisauswahl optimieren.
 
+***
 
 Known Issues:
 - None
