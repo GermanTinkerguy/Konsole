@@ -36,16 +36,16 @@ void showHeader(const std::string& text) {
 }
 
 
- /***************************************************
-  *  Name:        wait
-  *
-  *  Returns:     Nothing.
-  *
-  *  Parameters:  None.
-  *
-  *  Description: Wait for input.
-  *
-  ***************************************************/
+/***************************************************
+ *  Name:        wait
+ *
+ *  Returns:     Nothing.
+ *
+ *  Parameters:  None.
+ *
+ *  Description: Wait for input.
+ *
+ ***************************************************/
 void wait() {
 
 	// clear buffer
@@ -80,7 +80,7 @@ int main() {
 		// input data
 		std::cout << "Achtung:\nPunkt statt Komma!\n";
 		std::cout << "\n";
-		std::cout << "Gr\224\341e in m: ";
+		std::cout << "Gr\224\341e in m:    ";
 		std::cin >> height;
 		std::cout << "Gewicht in kg: ";
 		std::cin >> weight;
