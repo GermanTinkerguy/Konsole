@@ -78,7 +78,7 @@ int main() {
 		showHeader("BMI Rechner (Maenner)");
 
 		// input data
-		std::cout << "Achtung: Punkt statt Komma!\n";
+		std::cout << "Achtung:\nPunkt statt Komma!\n";
 		std::cout << "\n";
 		std::cout << "Groesse in m:  ";
 		std::cin >> height;
