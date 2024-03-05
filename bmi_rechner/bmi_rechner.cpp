@@ -75,12 +75,12 @@ int main() {
 		double height = 0.0, weight = 0.0, bmi = 0.0;
 
 		// show header
-		showHeader("BMI Rechner (Maenner)");
+		showHeader("BMI Rechner (M\204nner)");
 
 		// input data
 		std::cout << "Achtung:\nPunkt statt Komma!\n";
 		std::cout << "\n";
-		std::cout << "Groesse in m:  ";
+		std::cout << "Gr\224sse in m:  ";
 		std::cin >> height;
 		std::cout << "Gewicht in kg: ";
 		std::cin >> weight;
@@ -111,7 +111,7 @@ int main() {
 			std::cout << "18.5 - 25      Normalgewicht\n";
 		}
 		if (25 <= bmi && bmi <= 30) {
-			std::cout << "  25 - 30      Uebergewicht\n";
+			std::cout << "  25 - 30      \201bergewicht\n";
 		}
 		if (30 <= bmi && bmi <= 35) {
 			std::cout << "  30 - 35      Adipositas Grad I\n";
