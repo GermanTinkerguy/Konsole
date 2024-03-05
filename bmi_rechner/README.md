@@ -7,11 +7,11 @@ Information:
 Funktionen:
 - Rahmen des Titels passt sich individuell auf die Länge an
 - Erkennung von Falscheingaben wie Negativzahlen, Null oder Buchstaben.
-- Kontrolliertes Beenden nac Falscheingabe.
+- Kontrolliertes Beenden nach Falscheingabe.
 - Berechnung von Kommazahlen.
-- Ausgabe der Individuellen Wertetabelle nach Ergebnis.
-- Löschen der Konsoleausgabe vor neuer Berechnungseingabe.
-- Komplett auf Englisch geschriebener Code. Nur Ausgabe af Deutsch.
+- Ausgabe der individuellen Wertetabelle nach Ergebnis.
+- Löschen der Konsoleausgabe vor einer neuen Berechnungseingabe.
+- Komplett auf englisch geschriebener Code. Nur die Ausgabe ist auf Deutsch.
 - Deaktivierung der E-Notation.
 
 
