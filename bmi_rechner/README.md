@@ -5,6 +5,7 @@ Information:
 
 
 Funktionen:
+- Rahmen des Titels passt sich individuell auf die Länge an
 - Erkennung von Falscheingaben wie Negativzahlen, Null oder Buchstaben.
 - Kontrolliertes Beenden nac Falscheingabe.
 - Berechnung von Kommazahlen.
